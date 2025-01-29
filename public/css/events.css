@@ -1,0 +1,131 @@
+.evento {
+    background-color: var(--branco);
+    height: 100%;
+    color: var(--preto);
+}
+
+.evento_conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem;
+}
+
+.evento_imagem {
+    width: 500px;
+    height: 313px;
+    border-radius: 10px;
+}
+
+.evento_dados {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.evento_info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.evento_titulo {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.evento_participantes {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.evento_data {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.evento_endereco {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.btn-presenca {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--verde-agua);
+    border: 1px solid var(--preto);
+    font-weight: 600;
+}
+
+.evento_descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.descricao_titulo {
+    font-weight: 500;
+}
+
+.link-nao-logado {
+    color: var(--verde-agua);
+}
+
+.paragrafo-participando {
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--preto);
+    border: 1px solid var(--verde);
+    color: var(--branco);
+    text-align: center;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 768px){
+    .evento {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+
+    .evento_conteudo {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .evento_imagem {
+        width: 320px;
+        height: 213px;
+        border-radius: 10px;
+    }
+
+    .evento_dados {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .evento_descricao {
+        align-items: flex-start;
+        margin-top: 3rem;
+    }
+
+    .paragrafo-participando {
+        font-size: 0.8rem;
+    }
+}

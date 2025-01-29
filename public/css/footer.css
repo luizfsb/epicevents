@@ -1,0 +1,96 @@
+.rodape {
+    background-color: var(--preto);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--cinza-claro);
+    
+} 
+
+.rodape_empresa {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.contatos-telefone,
+.contatos-email {
+    display: flex;
+    height: 100%;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contatos-telefone {
+    margin-bottom: 0.7rem;
+}
+
+.rodape_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.rodape_link {
+    text-decoration: none;
+    color: var(--cinza-claro);
+}
+
+.rodape_link:hover {
+    color: var(--verde);
+}
+
+.rodape-logo-redes {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.rodape-logo {
+    display: flex;
+    align-items:center;
+    gap: 0.5em;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.rodape-logo_img {
+    width: 70px;
+}
+
+.logo-nome-rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.rodape-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icone-link {
+    text-decoration: none;
+}
+
+/* Resposividade */
+
+@media screen and (max-width: 550px){
+    .rodape {
+        flex-direction: column-reverse;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 787px){
+    .rodape {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}

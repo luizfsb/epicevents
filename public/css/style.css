@@ -1,0 +1,30 @@
+:root {
+    
+    /* fontes */
+    
+    --font: "Roboto", system-ui;
+
+    /* cores */
+
+    --roxo-claro: #6151BB;
+    --preto: #222831;
+    --cinza-claro: #C7C8CC;
+    --branco: #E4E4E4;
+    --branco-2: #D3F1DF;
+    --verde-escuro: #153B44;
+    --verde: #045757;
+    --verde-claro: #347928;
+    --verde-agua: #54C392;
+    --vermelho: #FF204E;
+}
+
+
+body {
+    font-family: var(--font);
+    font-weight: 400;
+    background-color: var(--branco);
+    color: var(--preto);
+    height: 100vh;
+    font-size: 16px;
+}
+

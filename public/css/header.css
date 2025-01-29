@@ -1,0 +1,121 @@
+.cabecalho_container {
+    display: flex;
+    padding: 0.2rem;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: var(--preto);
+}
+
+.cabecalho-logo {
+    display: flex;
+    align-items:center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.logo-nome {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cabecalho_links-lista {
+    display: flex;
+    gap: 3rem;   
+    margin-left: 40rem;
+}
+
+.link_item {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 500;
+}
+
+.link_item:hover {
+    color: var(--verde);
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 774px) {
+
+    .menu-hamburguer {
+        display: block;
+        padding-right: 0.8rem;
+        text-align: center;
+        color: var(--branco);
+    }
+
+    .menu-hamburguer-preto {
+        background-color: var(--cinza-claro);
+        color: var(--preto);
+        padding: 2rem 1rem;
+        text-align: center;
+        right: 0;
+        position: absolute;
+        border: 1px solid var(--preto);
+    }
+
+    .cabecalho_container {
+        position: relative;
+    }
+   
+   
+    .cabecalho_links-lista {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--cinza-claro);
+        top: 100%;
+        right: 0;
+        border: 1px solid var(--preto);
+        display: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .link-lista-item {
+        border-bottom: 1px solid var(--preto);
+        padding: 1.5rem 0;
+    }
+
+    .link-lista-item:hover {
+        background-color: var(--verde);
+    }
+
+    .link_item {
+        color: var(--preto);
+        font-size: 1.3rem;
+        padding: 1.5rem 5rem 1.5rem 1.5rem;
+        margin-right: 0;
+    }
+
+    .login,
+    .perfil,
+    .sair {
+        padding: 1.5rem 70% 1.5rem 1rem;
+    }
+
+    .cadastrar {
+        padding: 1.5rem 37% 1.5rem 1rem;
+    }
+
+    .criarEvento {
+       padding: 1.5rem 4rem 1.5rem 1rem;
+    }
+}
+
+@media screen and (max-width:1235px){
+    .cabecalho_links-lista {
+        margin-left: 12rem;
+    }
+}
