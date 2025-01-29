@@ -41,13 +41,23 @@ class EventController extends Controller
     {
         $user = auth()->user();
 
-        $fileResquest = $request->imagem_nome;
-        $nomeImagem = rand(0,999999) . "-" . $request->file('imagem_nome')->getClientOriginalName();;
-        $fileResquest->move(public_path('img/eventosImagens'), $nomeImagem);
-
+        // if($request->hasFile('imagem_nome'))
+        // {
+        //     $fileResquest = $request->imagem_nome;
+        //     $nomeImagem = rand(0,999999) . "-" . $request->file('imagem_nome')->getClientOriginalName();;
+        //     $fileResquest->move(public_path('img/eventosImagens'), $nomeImagem);
+        // }
         $data = $request->all();
+
+        if($request->hasFile('imagem_nome'))
+        {
+            $fileResquest = $request->imagem_nome;
+            $nomeImagem = rand(0,99999999) . "-" . $fileResquest->getClientOriginalName();
+            $fileResquest->storeAs('img/eventosImagens', $nomeImagem);
+            $data['imagem_nome'] = $nomeImagem;
+        }
+
         $data['user_id'] = $user->id;
-        $data['imagem_nome'] = $nomeImagem;
 
 
         $user->eventos()->create($data);
