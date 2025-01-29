@@ -18,5 +18,4 @@ A aplicação foi desenvolvida com as seguintes tecnologias:
 
 ## 🚀 Acessando o Projeto
 
-
-
+Para utilizar o projeto basta <a href="https://app-ecopoint-66242e9c0240.herokuapp.com/">acessar o link</a>.
