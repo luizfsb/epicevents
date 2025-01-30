@@ -342,7 +342,6 @@
 .input_data {
     border: none;
     border-radius: 5px;
-    width: 10rem;
     height: 2rem;
     font-size: 1rem;
     padding: 0 0.5rem 0 1rem;
@@ -595,10 +594,6 @@
 
     .text_descricao {
         width: 18rem;
-    }
-
-    .input_data {
-        width: 8.5rem;
     }
 
     .input_imagem {
