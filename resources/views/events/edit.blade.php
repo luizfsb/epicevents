@@ -24,10 +24,11 @@
         <img src="/img/eventosImagens/{{ $event->imagem }}" alt="Imagem do evento" class="imagem-preview">
         <div class="formulario_data">
             <label for="data">Data</label>
-            <div class="data_hora">
-                <input type="date" name="data" id="data" class="input_data" value="{{ $event->data }}">
-                <input type="time" name="horario" id="horario" class="input_horario" value="{{ $event->horario }}">
-            </div>
+            <input type="date" name="data" id="data" class="input_data" value="{{ $event->data }}">
+        </div>
+        <div class="formulario_horario">
+            <label for="horario">Horario</label>
+            <input type="time" name="horario" id="horario" class="input_horario" value="{{ $event->horario }}">
         </div>
         <div class="formulario_descricao">
             <label for="descricao">Descrição</label>

@@ -296,7 +296,8 @@
 .formulario_titulo,
 .formulario_cidade,
 .formulario_descricao,
-.formulario_data {
+.formulario_data,
+.formulario_horario {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -331,12 +332,6 @@
     border: none;
     height: 7rem;
     background-color: var(--cinza-claro);
-}
-
-.data_hora {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
 }
 
 .input_data {

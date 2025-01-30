@@ -30,11 +30,12 @@
             <input type="file" name="imagem" id="imagem" class="input_imagem" value="{{ old('imagem') }}">
         </div>
         <div class="formulario_data">
-            <label for="data">Data e Hora</label>
-            <div class="data_hora">
-                <input type="date" name="data" id="data" class="input_data" value="{{ old('data') }}">
-                <input type="time" name="horario" id="horario" class="input_horario" value="{{ old('horario') }}">
-            </div>
+            <label for="data">Data</label>
+            <input type="date" name="data" id="data" class="input_data" value="{{ old('data') }}">
+        </div>
+        <div class="formulario_horario">
+            <label for="horario">Horario</label>
+            <input type="time" name="horario" id="horario" class="input_horario" value="{{ old('horario') }}">
         </div>
         <div class="formulario_descricao">
             <label for="descricao">Descrição</label>
