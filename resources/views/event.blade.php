@@ -3,7 +3,7 @@
 @section('content')
 <div class="evento">
     <div class="evento_conteudo">
-        <img class="evento_imagem" src="/img/eventosImagens/{{$event->imagem_nome}}" alt="Imagem do evento">
+        <img class="evento_imagem" src="/img/eventosImagens/{{$event->imagem}}" alt="Imagem do evento">
         <div class="evento_dados">
             <p class="evento_titulo">{{ $event->titulo }}</p>
             <div class="evento_info">

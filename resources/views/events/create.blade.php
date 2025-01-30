@@ -27,7 +27,7 @@
         <div class="formulario_imagem">
             <label for="imagem">Imagem</label>
             <p class="imagem-paragrafo">Selecione uma imagem para a capa do seu evento:</p>
-            <input type="file" name="imagem_nome" id="imagem_nome" class="input_imagem" value="{{ old('imagem_nome') }}">
+            <input type="file" name="imagem" id="imagem" class="input_imagem" value="{{ old('imagem') }}">
         </div>
         <div class="formulario_data">
             <label for="data">Data e Hora</label>
@@ -78,18 +78,18 @@
 <footer class="rodape">
     <div class="rodape-conteudo">
         <div class="rodape-logo-redes">
-            <div class="rodape-logo">
+            <a href="{{ route('events.index') }}" class="rodape-logo">
                 <img class="rodape-logo_img" src="{{ asset('img/icones/logo.svg') }}" alt="icone do logo da empresa">
                 <div class="logo-nome-rodape">
                     <p>Epic</p>
                     <p>Events</p>
                 </div>
-            </div>
+            </a>
             <div class="rodape-redes">
-                <a href="#" class="icone-link">
+                <a href="https://www.instagram.com/" class="icone-link">
                     <img src="{{ asset('img/icones/iconeInstagram.svg') }}" alt="Icone do instagram">
                 </a>
-                <a href="#" class="icone-link">
+                <a href="https://x.com/" class="icone-link">
                     <img src="{{ asset('img/icones/iconeX.svg') }}" alt="Icone do X">
                 </a>
             </div>

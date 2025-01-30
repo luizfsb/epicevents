@@ -36,13 +36,14 @@
 <body>
     <header>
         <nav class="cabecalho_container">
-            <div class="cabecalho-logo">
-                <img src="{{ asset('img/icones/logo.svg') }}" alt="icone do logo da empresa">
-                <div class="logo-nome">
-                    <p>Epic</p>
-                    <p>Events</p>
-                </div>
+
+        <a href="{{ route('events.index') }}" class="cabecalho-logo">
+            <img src="{{ asset('img/icones/logo.svg') }}" alt="icone do logo da empresa">
+            <div class="logo-nome">
+                <p>Epic</p>
+                <p>Events</p>
             </div>
+        </a>
             <div class="cabecalho_container-links"> 
                 <ul class="cabecalho_links-lista" id="menu-links">
                     <li class="link-lista-item">

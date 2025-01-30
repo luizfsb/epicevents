@@ -508,7 +508,105 @@
 
 /* Responsividade */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 425px) {
+
+    /* Conteudo apresentacao */
+
+    .apresentacao_titulo {
+        font-size: 3rem;
+    }
+
+    .apresentacao_paragrafo {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .apresentacao_input {
+        width: 10rem;
+    }
+
+    /* Cards dos eventos */
+
+    .flip-card-back {
+        display: none;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+    }
+
+    .flip-card {
+        height: 310px;
+    }
+
+    .card_link-front {
+        display: block;
+        text-decoration: none;
+        color: var(--branco);
+        background-color: var(--verde);
+        width: 100%;
+        padding: 0.6rem;
+        margin-top: 1rem;
+        margin-left: 0.2rem;
+        border-radius: 10px;
+    }
+
+    /* Resultados de busca da aba de pesquisa */
+
+    .eventos-apresentacao_texto-buscando {
+        margin-left: 1rem;
+    }
+
+    /* Menu do usuario */
+
+    .titulo_eventos-menu {
+        font-size: 1.5rem;
+    }
+
+    .titulo-participante {
+        font-size: 0.7rem;
+    }
+
+    .btn-sair-participante {
+        font-size: 0.7rem;
+    }
+
+    .eventos-participando {
+        flex-direction: column;
+        gap: 0;
+    }
+
+
+    /* Formulario de criacao e edicao de Eventos */
+
+    .campos {
+        padding: 3rem 1rem;
+    }
+
+    .input_titulo,
+    .input_cidade {
+        width: 18rem;
+    }
+
+    .imagem-preview {
+        width: 150px;
+        height: 100px;
+    }
+
+    .text_descricao {
+        width: 18rem;
+    }
+
+    .input_data {
+        width: 8.5rem;
+    }
+
+    .input_imagem {
+        width: 18rem;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 769px) {
 
     /* Conteudo apresentacao */
     .apresentacao_paragrafo {
@@ -546,6 +644,12 @@
         border-radius: 10px;
     }
 
+     /* Resultados de busca da aba de pesquisa */
+
+    .eventos-apresentacao_texto-buscando {
+        margin-left: 1rem;
+    }
+
     /* Menu do usuario */
 
     .titulo_eventos-menu {
@@ -566,7 +670,7 @@
     }
 
 
-    /* Formulario de criacao de Eventos */
+    /* Formulario de criacao e edicao de Eventos */
 
     .campos {
         padding: 3rem 1rem;

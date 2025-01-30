@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\EventRequest;
+use App\Http\Requests\EventUpdateRequest;
 use Illuminate\Http\Request;
 use App\Models\Event;
 use App\Models\User;
@@ -40,21 +41,14 @@ class EventController extends Controller
     public function store(EventRequest $request, User $user)
     {
         $user = auth()->user();
-
-        // if($request->hasFile('imagem_nome'))
-        // {
-        //     $fileResquest = $request->imagem_nome;
-        //     $nomeImagem = rand(0,999999) . "-" . $request->file('imagem_nome')->getClientOriginalName();;
-        //     $fileResquest->move(public_path('img/eventosImagens'), $nomeImagem);
-        // }
         $data = $request->all();
 
-        if($request->hasFile('imagem_nome'))
+        if($request->hasFile('imagem'))
         {
-            $fileResquest = $request->imagem_nome;
+            $fileResquest = $request->imagem;
             $nomeImagem = rand(0,99999999) . "-" . $fileResquest->getClientOriginalName();
             $fileResquest->storeAs('img/eventosImagens', $nomeImagem);
-            $data['imagem_nome'] = $nomeImagem;
+            $data['imagem'] = $nomeImagem;
         }
 
         $data['user_id'] = $user->id;
@@ -139,15 +133,15 @@ class EventController extends Controller
     /**
      * Funcao para de atualizacao do formulario de edicao do evento
      */
-    public function update(EventRequest $request, Event $event)
+    public function update(EventUpdateRequest $request, Event $event)
     {
         $data = $request->all();
-        if($request->hasFile('imagem_nome'))
+        if($request->hasFile('imagem'))
         {
-            $fileResquest = $request->imagem_nome;
+            $fileResquest = $request->imagem;
             $nomeImagem = rand(0,99999999) . "-" . $fileResquest->getClientOriginalName();
             $fileResquest->storeAs('img/eventosImagens', $nomeImagem);
-            $data['imagem_nome'] = $nomeImagem;
+            $data['imagem'] = $nomeImagem;
         }
 
         $event->update($data);

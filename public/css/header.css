@@ -46,8 +46,7 @@
 
 /* Responsividade */
 
-@media screen and (max-width: 774px) {
-
+@media screen and (max-width: 425px) {
     .menu-hamburguer {
         display: block;
         padding-right: 0.8rem;
@@ -92,6 +91,84 @@
         background-color: var(--verde);
     }
 
+    .link_item:hover {
+        color: var(--branco);
+    }
+
+    .link_item {
+        color: var(--preto);
+        font-size: 1.3rem;
+        padding: 1.5rem 5rem 1.5rem 1.5rem;
+        margin-right: 0;
+    }
+
+    .login,
+    .perfil,
+    .sair {
+        padding: 1.5rem 70% 1.5rem 1rem;
+    }
+
+    .cadastrar {
+        padding: 1.5rem 4rem 1.5rem 1rem;
+    }
+
+    .criarEvento {
+       padding: 1.5rem 4rem 1.5rem 1rem;
+    }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 775px) {
+
+    .menu-hamburguer {
+        display: block;
+        padding-right: 0.8rem;
+        text-align: center;
+        color: var(--branco);
+    }
+
+    .menu-hamburguer-preto {
+        background-color: var(--cinza-claro);
+        color: var(--preto);
+        padding: 2rem 1rem;
+        text-align: center;
+        right: 0;
+        position: absolute;
+        border: 1px solid var(--preto);
+    }
+
+    .cabecalho_container {
+        position: relative;
+    }
+   
+   
+    .cabecalho_links-lista {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--cinza-claro);
+        top: 100%;
+        right: 0;
+        border: 1px solid var(--preto);
+        display: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .link-lista-item {
+        border-bottom: 1px solid var(--preto);
+        padding: 1.5rem 0;
+    }
+
+    .link-lista-item:hover {
+        background-color: var(--verde);
+        color: var(--branco);
+    }
+
+    .link_item:hover {
+        color: var(--branco);
+    }
+
     .link_item {
         color: var(--preto);
         font-size: 1.3rem;
@@ -114,7 +191,7 @@
     }
 }
 
-@media screen and (max-width:1235px){
+@media screen and (min-width: 775px) and (max-width:1235px){
     .cabecalho_links-lista {
         margin-left: 12rem;
     }

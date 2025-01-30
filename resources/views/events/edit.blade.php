@@ -17,11 +17,11 @@
             <input type="text" name="titulo" id="titulo" class="input_titulo" value="{{ $event->titulo }}">
         </div>
         <div class="formulario_imagem">
-            <label for="imagem_nome">Imagem</label>
+            <label for="imagem">Imagem</label>
             <p class="imagem-paragrafo">Selecione uma imagem para a capa do seu evento:</p>
-            <input type="file" name="imagem_nome" id="imagem_nome" class="input_imagem">
+            <input type="file" name="imagem" id="imagem" class="input_imagem">
         </div>
-        <img src="/img/eventosImagens/{{ $event->imagem_nome }}" alt="Imagem do evento" class="imagem-preview">
+        <img src="/img/eventosImagens/{{ $event->imagem }}" alt="Imagem do evento" class="imagem-preview">
         <div class="formulario_data">
             <label for="data">Data</label>
             <div class="data_hora">
@@ -67,18 +67,18 @@
 <footer class="rodape">
     <div class="rodape-conteudo">
         <div class="rodape-logo-redes">
-            <div class="rodape-logo">
+            <a href="{{ route('events.index') }}" class="rodape-logo">
                 <img class="rodape-logo_img" src="{{ asset('img/icones/logo.svg') }}" alt="icone do logo da empresa">
                 <div class="logo-nome-rodape">
                     <p>Epic</p>
                     <p>Events</p>
                 </div>
-            </div>
+            </a>
             <div class="rodape-redes">
-                <a href="#" class="icone-link">
+                <a href="https://www.instagram.com/" class="icone-link">
                     <img src="{{ asset('img/icones/iconeInstagram.svg') }}" alt="Icone do instagram">
                 </a>
-                <a href="#" class="icone-link">
+                <a href="https://x.com/" class="icone-link">
                     <img src="{{ asset('img/icones/iconeX.svg') }}" alt="Icone do X">
                 </a>
             </div>

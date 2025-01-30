@@ -43,20 +43,21 @@
         @foreach($events as $event)
         <div class="flip-card">
             <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="/img/eventosImagens/{{ $event->imagem_nome }}" alt="Imagem do evento" class="item_imagem">
-                        <div class="card-apresentacao">
-                            <p class="item_subtitulo">{{ $event->titulo }}</p>
-                            <p class="data">{{ date('d-m-Y', strtotime($event->data)) }} | {{ date('H:i', strtotime($event->horario))}}</p>
-                            <div class="localizacao-card">
-                                <img class="localizacao-img" src="{{ asset('img/icones/iconePointLocalizacao.svg') }}"
-                                    alt="Icone localizacao">
-                                <p class="nome-localizacao">
-                                    {{ $event->bairro . ", " . $event->cidade . "-" . $event->estado }}</p>
-                            </div>
-                            <a href="{{ route('events.show', $event->id) }}" class="card_link-front">Saber mais</a>
+                <div class="flip-card-front">
+                    <img src="/img/eventosImagens/{{ $event->imagem }}" alt="Imagem do evento" class="item_imagem">
+                    <div class="card-apresentacao">
+                        <p class="item_subtitulo">{{ $event->titulo }}</p>
+                        <p class="data">{{ date('d-m-Y', strtotime($event->data)) }} | {{ date('H:i', strtotime($event->horario))}}</p>
+                        <div class="localizacao-card">
+                            <img class="localizacao-img" src="{{ asset('img/icones/iconePointLocalizacao.svg') }}"
+                                alt="Icone localizacao">
+                            <p class="nome-localizacao">
+                                {{ $event->bairro . ", " . $event->cidade . "-" . $event->estado }}
+                            </p>
                         </div>
+                        <a href="{{ route('events.show', $event->id) }}" class="card_link-front">Saber mais</a>
                     </div>
+                </div>
                 <div class="flip-card-back">
                     <a href="{{ route('events.show', $event->id) }}" class="card_link-back">Saber mais</a>
                 </div>
@@ -71,18 +72,18 @@
 <footer class="rodape">
     <div class="rodape-conteudo">
         <div class="rodape-logo-redes">
-            <div class="rodape-logo">
+            <a href="{{ route('events.index') }}" class="rodape-logo">
                 <img class="rodape-logo_img" src="{{ asset('img/icones/logo.svg') }}" alt="icone do logo da empresa">
                 <div class="logo-nome-rodape">
                     <p>Epic</p>
                     <p>Events</p>
                 </div>
-            </div>
+            </a>
             <div class="rodape-redes">
-                <a href="#" class="icone-link">
+                <a href="https://www.instagram.com/" class="icone-link">
                     <img src="{{ asset('img/icones/iconeInstagram.svg') }}" alt="Icone do instagram">
                 </a>
-                <a href="#" class="icone-link">
+                <a href="https://x.com/" class="icone-link">
                     <img src="{{ asset('img/icones/iconeX.svg') }}" alt="Icone do X">
                 </a>
             </div>

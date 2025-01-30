@@ -24,7 +24,7 @@ class Event extends Model
         'cep', 
         'user_id',
         'horario',
-        'imagem_nome',
+        'imagem',
     ];
 
     public function user(){
