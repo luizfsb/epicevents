@@ -1,6 +1,13 @@
-## 🎉 Bem-vindo ao Epic Events 🚀
 
+<h1 align="center">🎉 Bem-vindo ao Epic Events 🚀</h1>
+
+<div align="center">
 Este é um projeto interativo para demonstrar o uso de tecnologias incríveis! Aqui você encontrará informações sobre o projeto, as ferramentas utilizadas e como utiliza-lo.
+</div>
+
+<br>
+
+![Captura de tela 2025-01-29 210301](https://github.com/user-attachments/assets/f0c92d1c-5c7a-4a94-9820-67c40529ab15)
 
 ## ℹ️ Sobre o Projeto
 
@@ -18,5 +25,4 @@ A aplicação foi desenvolvida com as seguintes tecnologias:
 
 ## 🚀 Acessando o Projeto
 
-
-
+Para utilizar o projeto basta <a href="https://app-ecopoint-66242e9c0240.herokuapp.com/">acessar o link</a>.
