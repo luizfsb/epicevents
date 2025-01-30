@@ -1,6 +1,9 @@
-## 🎉 Bem-vindo ao Epic Events 🚀
 
+<h1 align="center">🎉 Bem-vindo ao Epic Events 🚀</h1>
+
+<div align="center">
 Este é um projeto interativo para demonstrar o uso de tecnologias incríveis! Aqui você encontrará informações sobre o projeto, as ferramentas utilizadas e como utiliza-lo.
+</div>
 
 ## ℹ️ Sobre o Projeto
 
